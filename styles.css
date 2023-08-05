@@ -1,0 +1,163 @@
+.header-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  background-color: #f1f1f1;
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Adding a shadow to the header */
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%; /* Set the header width to 100% */
+}
+
+.logo img {
+  height: 40px;
+  /* Adjust the height as per your logo size */
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 20px;
+  /* Adjust the height of the three-line menu */
+  cursor: pointer;
+}
+
+.menu-line {
+  width: 25px;
+  height: 3px;
+  background-color: #333;
+  transition: transform 0.3s, box-shadow 0.3s; /* Add transition for smooth animation and box-shadow effect */
+}
+
+.menu-button {
+  display: none; /* Hide the menu initially */
+  position: absolute;
+  top: 60px; /* Adjust this value to set the distance from the header */
+  right: 10px; /* Adjust this value to position the menu horizontally */
+  background-color: #f1f1f1;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  z-index: 1; /* Set a higher z-index to overlay on top of other content */
+}
+
+.menu-items {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column; /* Arrange menu items vertically */
+}
+
+.menu-items li {
+  margin-bottom: 10px; /* Adjust the spacing between menu items */
+}
+
+.menu-items a {
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+}
+
+/* Additional CSS to create the cross ('X') icon */
+#line1.rotate, #line3.rotate {
+  transform: rotate(45deg);
+}
+
+#line2.rotate {
+  opacity: 0;
+}
+
+/* Adding shadow effect to the menu button when opened */
+.menu-button.show {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Add padding to the body to offset the header height */
+body {
+  padding-top: 60px; /* Adjust this value to match the header height */
+}
+
+
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+main {
+    padding: 20px;
+}
+
+/* Style for the channel icons */
+.channel-icons {
+    display: flex;
+    justify-content: center; /* Center the channels horizontally */
+}
+
+.channel-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 20px;
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Add shadow effect */
+    border-radius: 8px;
+}  
+    
+.channel-link img {
+    width: 100px;
+    border-radius: 8px;
+}
+
+footer {
+    background-color: #f9f9f9;
+    padding: 10px;
+    text-align: center;
+}
+
+
+.video-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+video {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+/* Define the font-face for your custom font */
+@font-face {
+  font-family: 'Cronus'; /* Choose a name for your font-family */
+  src: url('/Cronus.woff') format('woff'); /* Replace 'path/to/' with the actual file path */
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Apply the custom font to various elements */
+body {
+  font-family: 'Cronus', Arial, sans-serif; /* Use your custom font as the primary font-family */
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Cronus', Arial, sans-serif; /* Apply the custom font to headings */
+}
+
+p {
+  font-family: 'Cronus', Arial, sans-serif; /* Apply the custom font to paragraphs */
+}
+
+/* Add more CSS rules to apply the custom font to other elements as needed */
+
